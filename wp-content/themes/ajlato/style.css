@@ -1,0 +1,93 @@
+/*
+Theme Name: Exercise for Masonite
+Author: A.J. Latocha
+Version: 1.0
+*/
+
+* {
+	margin: 0px;
+	box-sizing: border-box;
+	font-family: Sans-Serif;
+}
+
+body {
+	min-height: 100vh;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 20px;
+}
+
+.container {
+	width: 100%;
+	max-width: 1200px;
+}
+
+.products {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+	grid-gap: 1rem;
+	align-content: center;
+}
+
+.products a {
+	text-decoration: none;
+	color: black;
+}
+
+.product {
+	height: 220px;
+	box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2);
+	background-color: grey;
+}
+
+.product-image {
+	  display: flex;
+	  justify-content: center;
+	  align-items: center;
+	  height: 68%;
+}
+
+.product-title {
+	background-color: white;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 32%;
+}
+
+.videos {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+	height: 380px;
+}
+
+	.videos-iframe-container {
+		width: 100%;
+		height: 100%;
+	}
+
+		.videos-iframe {
+			width: 100%;
+			height: 100%;
+		}
+
+	.videos-menu {
+		user-select: none;
+		padding: 10px;
+	}
+
+	.w3-bar-item {
+		min-height: 20px;
+	}
+
+	.w3-bar-item.active {
+	background-color: #ccc;
+	color: blue;
+	}
+
+	hr {
+		margin-top: 5px;
+		margin-bottom: 5px;
+	}
